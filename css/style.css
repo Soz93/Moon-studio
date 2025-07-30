@@ -1,0 +1,247 @@
+:root {
+  --color-primary: #A3B18A;     
+  --color-secondary: #DAD7CD;   
+  --color-accent: #588157;      
+  --color-background: #FEFAE0;  
+  --color-text: #333333;      
+  --color-white: #FFFFFF;
+  --color-beige: #EDE6DB;       
+  --color-brown: #A98467;       
+         
+}
+
+h1, h2, h3 ,h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body, p, a {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+.navbar{
+    background-color: #ede6db; 
+}
+.navbar-logo {
+  max-height: 100px;
+  height: auto;
+}
+.navbar-toggler{
+    border: none;
+    color: var(--color-text);
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-nav .nav-link {
+    color: var(--color-text);
+    
+}
+
+.fa-spa{
+    color: var(--color-brown);
+    font-size: 5rem;
+}
+   .navbar-nav .nav-link:hover,    
+    .navbar-nav .nav-link.active
+     {
+     color: var(--color-brown); 
+     transition: .4s;
+}
+
+.dropdown-menu{
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: var(--color-beige);
+    
+}
+
+.sign-up a , .purchase a {
+  color: var(--color-text);
+  cursor: pointer;
+}
+/* landing start */
+.landing-about ,.landing-checkout{
+   height: calc(70vh - 70px);
+    object-fit: fill; 
+}
+.carousel-item img{
+    
+    height: calc(100vh - 70px);
+    object-fit: cover;
+}
+.carousel-item h5{
+    font-size: 28px;
+}
+.carousel-item h5 ,p
+{
+    color: var(--color-text);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) sepia(20%) saturate(300%) hue-rotate(300deg);
+}
+.main-btn {
+    background-color: var(--color-brown);
+    color: var(--color-white) !important;
+    transition:  0.3s ease;
+}
+.main-btn a{
+    color: var(--color-white) !important;
+    text-decoration: none;
+}
+/* landing end */
+.featuers h2 , h4{
+    color: var(--color-accent) !important;
+}
+.featuers  h4{
+    color: var(--color-brown) !important;
+}
+
+.main-title::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background: var(--color-brown);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.icon-holder{
+    height: 200px;
+}
+.icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon-holder .number{
+    font-size: 12rem;
+    color: #ede6db7b;
+}
+.icon-holder .icon{
+    color: var(--color-primary);
+}
+
+
+.our-work{
+    background: var(--color-secondary);
+}
+.our-work ul .active{
+    background: var(--color-primary);
+    color: var(--color-background);
+}
+.our-work ul li{
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .box{
+    overflow: hidden;
+    padding: 3px;
+    position: relative;
+    background: var(--color-beige);
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    width:calc(100% - 6px);
+    height:calc(100% - 75px);
+    background: #a984672f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+   transform: translateX(calc(-100% - 10px));
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark-color);
+    cursor: pointer;
+}
+.our-work .box:hover::before{
+  transform: translateX(0);  
+}
+
+.teachs-about{
+    background-color: var(--color-primary);
+}
+
+.subscribe{
+    background: var(--color-primary);
+}
+.subscribe input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white  ;
+}
+.subscribe input[type="submit"]{
+    background:var(--color-brown);
+    color: var(--color-white);
+}
+.subscribe ::placeholder{
+    color: white;
+}
+
+.checkout {
+      max-width: 700px;
+      margin: 60px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+    .form-label {
+      font-weight: 500;
+    }
+    .summary {
+      background-color: #f1f3f5;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    
+    form .main-btn:hover {
+      background-color: var(--color-accent);
+      transition: .3s;
+
+    }
+.footer{
+    background: var(--color-secondary) ;
+   
+}
+.footer .copyright >span{
+    color: var(--color-accent);
+    font-weight: 600;
+}
+.footer .copyright div span{
+    color: var(--color-brown);
+    font-weight: 600;
+}
+.footer .contact svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook{
+    background: #1877f2;
+    color: white;
+}
+.footer .instagram{
+background: #f77737;
+color: white;
+}
+.footer .twitter{
+background: #000000;
+color: white;
+}
+.footer .pinterest{
+background: #e60023;
+color: white;
+}
+
+
+
+
+
+
+
+
+

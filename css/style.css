@@ -220,6 +220,11 @@ body, p, a {
     width: 20px;
     height: 20px;
 }
+.footer h5{
+    color: var(--color-brown);
+    font-weight: 600;
+
+}
 .footer .facebook{
     background: #1877f2;
     color: white;

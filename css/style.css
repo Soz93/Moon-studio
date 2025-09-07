@@ -58,6 +58,18 @@ body, p, a {
 .sign-up a , .purchase a {
   color: var(--color-text);
   cursor: pointer;
+   position: relative;
+  display: inline-block;
+}
+#cart-count {
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -10px;
 }
 /* landing start */
 .landing-about ,.landing-checkout{
@@ -147,7 +159,7 @@ body, p, a {
     content: attr(data-work);
     position: absolute;
     width:calc(100% - 6px);
-    height:calc(100% - 75px);
+    height:calc(100% - 115px);
     background: #a984672f;
     display: flex;
     align-items: center;

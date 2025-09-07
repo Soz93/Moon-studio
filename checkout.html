@@ -39,9 +39,7 @@
                     <li class="nav-item">
                         <a class="nav-link  mx-3" href="about.html">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  mx-3" href="tring.html">ؤا</a>
-                    </li>
+                   
 
                     <li class="nav-item dropdown  mx-3">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -66,6 +64,7 @@
                     <div class="purchase fs-5">
                         <a href="checkout.html">
                             <i class="fa-solid fa-basket-shopping"></i>
+                            <span id="cart-count">0</span>
                         </a>
                     </div>
                 </div>
@@ -135,46 +134,51 @@
     </div>
 
     <!-- Order Form -->
-    <form>
-      <div class="mb-3">
-        <label for="fullName" class="form-label">Full Name</label>
-        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
-      </div>
+    <form name="order" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                 <input type="hidden" name="form-name" value="order">
+                 <p class="hidden">
+    <!-- <label>Don’t fill this out if you're human: <input name="bot-field"></label> -->
+  </p>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                </div>
 
-      
-      <div class="mb-3">
-        <label for="email" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-      </div>
-<div class="mb-3">
-        <label for="email" class="form-label">Contact Number</label>
-        <input type="number" class="form-control" id="Number" placeholder="0700000000" required>
-      </div>
-      <div class="mb-3">
-        <label for="address" class="form-label">Shipping Address</label>
-        <input type="text" class="form-control" id="address" placeholder="123 Beauty St, City" required>
-      </div>
 
-      <div class="mb-3">
-        <label for="payment" class="form-label">Payment Method</label>
-        <select class="form-select" id="payment" required>
-          <option selected disabled>Choose a payment method</option>
-          <option value="card">Credit / Debit Card</option>
-          <option value="paypal">PayPal</option>
-          <option value="cod">Cash on Delivery</option>
-        </select>
-      </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Contact Number</label>
+                    <input type="number" class="form-control" id="Number" placeholder="0700000000" required>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Shipping Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="123 Beauty St, City" required>
+                </div>
 
-      <button type="submit" class="btn main-btn w-100 py-3 rounded-pill mt-3">
-        <i class="fas fa-check-circle me-2"></i> Confirm Order
-      </button>
-    </form>
+                <div class="mb-3">
+                    <label for="payment" class="form-label">Payment Method</label>
+                    <select class="form-select" id="payment" required>
+                        <option selected disabled>Choose a payment method</option>
+                        <option value="card">Credit / Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cod">Cash on Delivery</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn main-btn w-100 py-3 rounded-pill mt-3">
+                    <i class="fas fa-check-circle me-2"></i> Confirm Order
+                </button>
+            </form>
     </div>
   </div>
     
     
     
    <div class="footer pt-5 text-center text-md-start text-center text-md-start">
+
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
@@ -249,6 +253,8 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>

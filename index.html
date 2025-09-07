@@ -59,6 +59,7 @@
                     <div class="purchase fs-5">
                         <a href="checkout.html">
                             <i class="fa-solid fa-basket-shopping"></i>
+                            <span id="cart-count">0</span>
                         </a>
                     </div>
                 </div>
@@ -157,49 +158,129 @@
             </div>
         </div>
     </div>
-    <div class="our-work text-center pt-5 pb-5">
+     <div class="our-work text-center pt-5 pb-5">
         <div class="container">
             <div class="main-title position-relative mb-5 mt-5">
                 <i class="fas fa-spa pb-5"></i>
                 <h2>Our Beauty Creations</h2>
                 <p class="uppercase text-black-50">Explore Some Of Our Best Products</p>
             </div>
+
             <ul class="list-unstyled d-flex justify-content-center mt-5 mb-5">
-                <li class="active  px-4 py-2 rounded-pill">All</li>
-                <li class=" px-3 py-2 ">Skincare</li>
-                <li class=" px-3 py-2">Makeup</li>
-                <li class=" px-3 py-2">Hair</li>
-                <li class=" px-3 py-2">Body</li>
+                <li class="active px-4 py-2 rounded-pill">All</li>
+                <li class="px-3 py-2">Skincare</li>
+                <li class="px-3 py-2">Makeup</li>
+                <li class="px-3 py-2">Hair</li>
+                <li class="px-3 py-2">Body</li>
             </ul>
+
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 " id="Beauty">
-                    <div class="box pb-2 mb-4" data-work="Order Now">
-                        <img class="img-fluid" src="imgs/1.jpg" alt="">
-                        <h4 class="text-dark fs-5 pt-2"> Price £10 <del class="text-danger">£13</del> </h4>
+                <!-- Body -->
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="body">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/9.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star-half-stroke text-warning"></i>
                         <i class="fas fa-star-half-stroke text-warning"></i>
                     </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="body">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/10.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="body">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/landing-01.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="body">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/landing-02.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                    </div>
+                </div>
 
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 " id="Beauty">
-                    <div class="box pb-2 mb-4" data-work="Order Now">
-                        <img class="img-fluid" src="imgs/landing-01.jpg" alt="">
-                        <h4 class="text-dark fs-5 pt-2"> Price £10 <del class="text-danger">£13</del> </h4>
+                <!-- Skincare -->
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="skincare">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/3.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star-half-stroke text-warning"></i>
                         <i class="fas fa-star-half-stroke text-warning"></i>
                     </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="skincare">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/4.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="skincare">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/5.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="skincare">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/7.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                    </div>
+                </div>
 
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" id="Beauty">
-                    <div class="box pb-2 mb-4" data-work="Order Now">
-                        <img class="img-fluid" src="imgs/3.jpg" alt="">
-                        <h4 class="text-dark fs-5 pt-2"> Price £10 <del class="text-danger">£13</del> </h4>
+                <!-- Makeup -->
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="makeup">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/1.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
@@ -207,10 +288,11 @@
                         <i class="fas fa-star-half-stroke text-warning"></i>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" id="Beauty">
-                    <div class="box pb-2 mb-4" data-work="Order Now">
-                        <img class="img-fluid" src="imgs/4.jpg" alt="">
-                        <h4 class="text-dark fs-5 pt-2"> Price £10 <del class="text-danger">£13</del> </h4>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="makeup">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/8.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
@@ -218,10 +300,11 @@
                         <i class="fas fa-star-half-stroke text-warning"></i>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" id="Beauty">
-                    <div class="box pb-2 mb-4" data-work="Order Now">
-                        <img class="img-fluid" src="imgs/5.jpg" alt="">
-                        <h4 class="text-dark fs-5 pt-2"> Price £10 <del class="text-danger">£13</del> </h4>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="makeup">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/3.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
@@ -229,10 +312,11 @@
                         <i class="fas fa-star-half-stroke text-warning"></i>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" id="Beauty">
-                    <div class="box pb-2 mb-4" data-work="Order Now">
-                        <img class="img-fluid" src="imgs/6.jpg" alt="">
-                        <h4 class="text-dark fs-5 pt-2"> Price £10 <del class="text-danger">£13</del> </h4>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="makeup">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/4.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
@@ -240,10 +324,13 @@
                         <i class="fas fa-star-half-stroke text-warning"></i>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" id="Beauty">
-                    <div class="box pb-2  mb-4 " data-work="Order Now">
-                        <img class="img-fluid" src="imgs/7.jpg" alt="">
-                        <h4 class="text-dark fs-5 pt-2"> Price £10 <del class="text-danger">£13</del> </h4>
+
+                <!-- Hair -->
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="hair">
+                    <div class="box pb-2 mb-4">
+                        <img src="imgs/5.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
@@ -251,10 +338,35 @@
                         <i class="fas fa-star-half-stroke text-warning"></i>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" id="Beauty">
-                    <div class="box  mb-4 pb-2" data-work="Order Now">
-                        <img class="img-fluid" src="imgs/8.jpg" alt="">
-                        <h4 class="text-dark fs-5 pt-2"> Price £10 <del class="text-danger">£13</del> </h4>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="hair">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/6.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="hair">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/7.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                        <i class="fas fa-star-half-stroke text-warning"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-category="hair">
+                    <div class="box pb-2 mb-4">
+                         <img src="imgs/8.jpg" class="img-fluid">
+                        <h4 class="text-dark fs-5 pt-2"> Price £10 </h4>
+                        <p class="text-danger"> Sale %10</p>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
                         <i class="fas fa-star text-warning"></i>
@@ -263,9 +375,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="d-flex justify-content-center align-items-center">
-            <a class="main-btn btn rounded-pill mt-5 px-5" href="#">Show Me More</a>
+
         </div>
     </div>
     <div class="teachs py-2 text-center">
@@ -295,21 +405,22 @@
             </div>
         </div>
     </div>
-    <div class="subscribe py-5 ">
-        <div class="container">
-            <form class="row align-items-center text-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="fw-bold fs-5 mb-3">Subscribe to our Newsletter:</div>
-                </div>
-                <div class="col-md-6 col-lg-7 mb-5">
-                    <input class="w-100 bg-transparent text-light p-2" placeholder="Enter Email Address" type="text">
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <input type="submit" class="btn main-btn px-5 py-3 my-3 rounded-pill" value="Subscribe">
-                </div>
-            </form>
-        </div>
+     <div class="subscribe py-5">
+    <div class="container">
+        <form id="newsletter-form" class="row align-items-center text-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="fw-bold fs-5 mb-3">Subscribe to our Newsletter:</div>
+            </div>
+            <div class="col-md-6 col-lg-7 mb-5">
+                <input id="email-input" class="w-100 bg-transparent text-dark p-2" placeholder="Enter Email Address" type="text">
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <input type="submit" class="btn main-btn px-5 py-3 my-3 rounded-pill" value="Subscribe">
+            </div>
+        </form>
+        <div id="form-message" class="text-center mt-2"></div>
     </div>
+</div>
     <div class="footer pt-5 text-center text-md-start text-center text-md-start">
         <div class="container">
             <div class="row">
@@ -385,6 +496,8 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+        <script src="js/main.js"></script>
+
 </body>
 
 </html>

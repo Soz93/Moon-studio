@@ -159,7 +159,7 @@ body, p, a {
     content: attr(data-work);
     position: absolute;
     width:calc(100% - 6px);
-    height:calc(100% - 115px);
+    height:calc(100% - 165px);
     background: #a984672f;
     display: flex;
     align-items: center;

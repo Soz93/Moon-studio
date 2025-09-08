@@ -87,20 +87,3 @@ form.addEventListener('submit', function(e){
     }
 });
 
-const orderForm = document.querySelector('form[name="order"]');
-
-orderForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const formData = new FormData(orderForm);
-
-    fetch('/', {
-        method: 'POST',
-        body: formData
-    })
-    .then(() => {
-        alert('✅ Your order has been successfully submitted!');
-        orderForm.reset();
-    })
-    .catch(error => alert('❌ There was a problem submitting your order.'));
-});

@@ -1,3 +1,15 @@
+// ===== Filters =====
+document.querySelectorAll('.our-work ul li').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        document.querySelectorAll('.our-work ul li').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const category = btn.textContent.toLowerCase();
+        document.querySelectorAll('.our-work .col-lg-3').forEach(box=>{
+            box.style.display = (category==='all' || box.dataset.category===category) ? 'block':'none';
+        });
+    });
+});
+
 // ===== Cart =====
 const cartCount = document.getElementById('cart-count');
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -17,17 +29,7 @@ document.querySelectorAll('.box').forEach(product=>{
     });
 });
 
-// ===== Filters =====
-document.querySelectorAll('.our-work ul li').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-        document.querySelectorAll('.our-work ul li').forEach(b=>b.classList.remove('active'));
-        btn.classList.add('active');
-        const category = btn.textContent.toLowerCase();
-        document.querySelectorAll('.our-work .col-lg-3').forEach(box=>{
-            box.style.display = (category==='all' || box.dataset.category===category) ? 'block':'none';
-        });
-    });
-});
+
 
 // ===== Cart Display =====
 const summaryDiv = document.querySelector('.summary');
@@ -60,30 +62,5 @@ if(summaryDiv){
 }
 
 
-const form = document.getElementById('newsletter-form');
-const emailInput = document.getElementById('email-input');
-const messageDiv = document.getElementById('form-message');
 
-form.addEventListener('submit', function(e){
-    e.preventDefault();
-    const email = emailInput.value.trim();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if(email === ''){
-        messageDiv.textContent = 'Please enter your email.';
-        messageDiv.style.color = 'red';
-    } else if(!emailRegex.test(email)){
-        messageDiv.textContent = 'Please enter a valid email address.';
-        messageDiv.style.color = 'red';
-    } else {
-        // تخزين الايميل في localStorage
-        let subscribers = JSON.parse(localStorage.getItem('subscribers')) || [];
-        subscribers.push(email);
-        localStorage.setItem('subscribers', JSON.stringify(subscribers));
-
-        messageDiv.textContent = 'Thank you for subscribing!';
-        messageDiv.style.color = 'green';
-        emailInput.value = '';
-    }
-});
 
